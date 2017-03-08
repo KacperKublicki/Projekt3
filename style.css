@@ -1,0 +1,60 @@
+body
+{
+	background-color: black;
+	color: gray;
+	font-size: 28px;
+	font-family: 'Inconsolata', monospace; /* jest to czcionka, której poszczególne litery mają taką samą szerokość. Dzięki tej czcionce odkrywane hasło nie będzie się rozjeżdzać na boki */
+}
+
+#pojemnik
+{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#plansza
+{
+	width: 900px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 48px;
+	min-height: 60px;
+}
+
+#szubienica
+{
+	float: left;
+	width: 450px;
+	text-align: center;
+	min-height: 280px; /*tyle ma wysokość obrazka, ale ustawiane jest to po to aby w wypadku załadowania następnego obrazka (bo tutaj one się zmieniają) nie było czegoś takiego, że obrazek się delikatnie rusza... */
+}
+
+#alfabet
+{
+	float: left;
+	width: 450px;
+	text-align: center;
+	min-height: 280px;
+}
+
+.litera
+{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+	border: 3px solid gray;
+	float: left;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+.litera:hover
+{
+	background-color: #222222;
+	color: white;
+	border: 3px solid white;
+}
